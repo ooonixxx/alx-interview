@@ -24,11 +24,11 @@ def pascal_triangle(n):
 
     triangle = [[1]]
 
-    for i in range(1, n):
+    for index in range(1, n):
         row = [1]
-        prev_row = triangle[i - 1]
+        prev_row = triangle[index - 1]
 
-        for j in range(1, i):
+        for j in range(1, index):
             row.append(prev_row[j - 1] + prev_row[j])
 
         row.append(1)
@@ -38,5 +38,5 @@ def pascal_triangle(n):
 
 
 if __name__ == "__main__":
-    # Run the test cases using pytest
+    # Run test cases using pytest
     pytest.main([__file__])
