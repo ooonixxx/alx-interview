@@ -1,1 +1,1 @@
-Pascals triangle code
+0x00. Pascal's Triangle
